@@ -1,0 +1,17 @@
+{
+    "name": "app-electron",
+    "version": "0.0.1-beta",
+    "description": "Projet découverte de ElectronJS avec Maxime Tournier le meilleur formateur",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder"
+    },
+    "author": "Osci",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^29.2.0",
+        "electron-builder": "^22.14.13"
+    },
+    "dependencies": {}
+}
