@@ -11,7 +11,7 @@ function createWindow() {
         resize: true,
         minWidth: 400,
         minHeight: 300,
-        icon: path.join(__dirname, 'assets/bagneres.png'),
+        icon: path.join(__dirname, 'assets/bagnere.png'),
         webPreferences: {
             preload: path.join(__dirname, 'front/preload.js'),
             webSecurity: true,
@@ -22,6 +22,10 @@ function createWindow() {
     })
 
     mainWindow.setMenuBarVisibility(false);
+
+    // mainWindow.loadURL('https://fr.wikipedia.org/wiki/Bagn%C3%A8res-de-Bigorre');
+
+    mainWindow.loadFile('front/index.html');
 }
 
 app.whenReady().then(() => {
